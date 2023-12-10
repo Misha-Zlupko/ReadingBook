@@ -1,0 +1,50 @@
+@import "../styles/mixin";
+@import "../styles/colors";
+
+.button {
+  border-radius: 30px;
+  border: 1px solid rgba(249, 249, 249, 0.2);
+  background: transparent;
+
+  font-weight: 700;
+  letter-spacing: 0.32px;
+  font-size: 16px;
+  line-height: 20px;
+
+  padding: 12px 28px;
+
+  @include for-size(phone) {
+    font-size: 14px;
+    line-height: 18px;
+
+    padding: 10px 20px;
+  }
+
+  color: $white;
+
+  &__authorization {
+    border: none;
+    background: $white;
+    color: $black;
+
+    font-size: 20px;
+    letter-spacing: 0.4px;
+
+    padding: 16px 54px;
+
+    @include for-size(phone) {
+      padding: 12px 29px;
+
+      font-size: 14px;
+      letter-spacing: 0.28px;
+    }
+  }
+
+  &__popup {
+    padding: 14px 28px;
+
+    @include for-size(phone) {
+      font-size: 12px 24px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import "../styles/colors";
+@import "../styles/container";
+@import "../styles/mixin";
+
+.input {
+  border-radius: 12px;
+  background: #262626;
+
+  width: 472px;
+  height: 50px;
+
+  padding: 16px 0px 16px 14px;
+  &__el {
+    position: relative;
+    margin-left: 10px;
+  }
+
+  &__bef {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: red;
+  }
+}
